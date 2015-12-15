@@ -4,14 +4,16 @@
     <list default="true" id="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" name="Default" comment="" />
     <ignored path="ToDo.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450214079188" ignored="false" />
+    <file path="/index.html" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450217313490" ignored="false" />
     <file path="/app.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450213225283" ignored="false" />
     <file path="/a.dummy" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450212725725" ignored="false" />
     <file path="/main.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450212921652" ignored="false" />
-    <file path="/task-app.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450213430050" ignored="false" />
-    <file path="/task-controller.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450214916629" ignored="false" />
-    <file path="/task-view.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450214802408" ignored="false" />
-    <file path="/task.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450214274925" ignored="false" />
+    <file path="/task-app.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450216804890" ignored="false" />
+    <file path="/task-controller.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450217343597" ignored="false" />
+    <file path="/task-view.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450216459488" ignored="false" />
+    <file path="/task.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450216934100" ignored="false" />
+    <file path="/index.css" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450216579475" ignored="false" />
+    <file path="/filter-state.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450217132666" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +36,8 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="257" selection-end="305" vertical-scroll-proportion="-4.3076925">
+            <state line="52" column="51" selection-start="1798" selection-end="1798" vertical-scroll-proportion="-3.6538463">
               <folding>
-                <element signature="tag#script#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="n#style#0;n#section#0;n#script#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#footer#0;n#script#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="tag#script#1;tag#body#0;tag#html#0" expanded="false" />
@@ -51,10 +52,10 @@
       <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="32" selection-start="101" selection-end="101" vertical-scroll-proportion="-6.12">
+            <state line="7" column="56" selection-start="70" selection-end="70" vertical-scroll-proportion="-4.76">
               <folding>
-                <element signature="e#3586#3790#2" expanded="true" />
-                <element signature="e#3846#4113#2" expanded="true" />
+                <element signature="e#3594#3798#2" expanded="true" />
+                <element signature="e#3854#4121#2" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,15 +65,6 @@
         <entry file="file://$PROJECT_DIR$/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="86" column="57" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/app.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -99,16 +91,25 @@
       <file leaf-file-name="task-app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/backbone/apps/task/task-app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="26" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
+            <state line="9" column="37" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task-controller.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="filter-state.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/backbone/entities/filter-state.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="57" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task-controller.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/backbone/apps/task/list/task-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="52" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
+            <state line="21" column="44" selection-start="895" selection-end="895" vertical-scroll-proportion="0.595186">
               <folding />
             </state>
           </provider>
@@ -117,16 +118,16 @@
       <file leaf-file-name="task.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/backbone/entities/task.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="45" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
+            <state line="40" column="26" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task-view.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="task-view.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/backbone/apps/task/list/task-view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="38" selection-start="765" selection-end="765" vertical-scroll-proportion="0.96025103">
+            <state line="3" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,14 +149,15 @@
         <option value="$PROJECT_DIR$/js/vendor/backbone.radio.js" />
         <option value="$PROJECT_DIR$/css/base.css" />
         <option value="$PROJECT_DIR$/css/app.css" />
-        <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/backbone/apps/task/list/task-views.js" />
-        <option value="$PROJECT_DIR$/js/backbone/apps/task/task-app.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/backbone/entities/task.js" />
         <option value="$PROJECT_DIR$/js/backbone/app.js" />
+        <option value="$PROJECT_DIR$/css/index.css" />
+        <option value="$PROJECT_DIR$/js/backbone/apps/task/task-app.js" />
+        <option value="$PROJECT_DIR$/js/backbone/entities/task.js" />
+        <option value="$PROJECT_DIR$/js/backbone/entities/filter-state.js" />
         <option value="$PROJECT_DIR$/js/backbone/apps/task/list/task-view.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/backbone/apps/task/list/task-controller.js" />
       </list>
     </option>
@@ -360,6 +362,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DNS\WebstormProjects\ToDo\js\backbone\entities" />
       <recent name="C:\Users\DNS\WebstormProjects\ToDo\js\backbone\apps\task\list" />
       <recent name="C:\Users\DNS\WebstormProjects\ToDo\css" />
       <recent name="C:\Users\DNS\WebstormProjects\ToDo" />
@@ -524,26 +527,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="101" selection-end="101" vertical-scroll-proportion="-6.12">
-          <folding>
-            <element signature="e#3586#3790#2" expanded="true" />
-            <element signature="e#3846#4113#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="86" column="57" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/backbone/apps/task/task-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="26" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -555,13 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/backbone/entities/task.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="45" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/backbone/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="45" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
@@ -569,11 +548,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="56" selection-start="70" selection-end="70" vertical-scroll-proportion="-4.76">
+          <folding>
+            <element signature="e#3594#3798#2" expanded="true" />
+            <element signature="e#3854#4121#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/backbone/apps/task/task-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="37" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/backbone/entities/task.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="26" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/backbone/entities/filter-state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="57" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/backbone/apps/task/list/task-view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="257" selection-end="305" vertical-scroll-proportion="-4.3076925">
+        <state line="52" column="51" selection-start="1798" selection-end="1798" vertical-scroll-proportion="-3.6538463">
           <folding>
-            <element signature="tag#script#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="n#style#0;n#section#0;n#script#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#footer#0;n#script#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="tag#script#1;tag#body#0;tag#html#0" expanded="false" />
@@ -586,14 +602,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/backbone/apps/task/list/task-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="52" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/backbone/apps/task/list/task-view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="38" selection-start="765" selection-end="765" vertical-scroll-proportion="0.96025103">
+        <state line="21" column="44" selection-start="895" selection-end="895" vertical-scroll-proportion="0.595186">
           <folding />
         </state>
       </provider>
