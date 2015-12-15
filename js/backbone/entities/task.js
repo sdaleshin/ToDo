@@ -39,7 +39,11 @@ App.module('Entities', function (Entities, App, Backbone, Marionette, $, _) {
         localStorage: new Backbone.LocalStorage('todo-tasks'),
 
         comparator: function(model){
-            return -model.get('title');
+            return String.fromCharCode.apply(String,
+                _.map(model.get("title").split(""), function (c) {
+                    return 0xffff - c.charCodeAt();
+                })
+            );
         },
 
         getCompleted: function () {

@@ -37,9 +37,7 @@ App.module('TaskApp.List', function (List, App, Backbone, Marionette, $, _) {
             var todoText = this.ui.input.val().trim();
 
             if (e.which === ENTER_KEY && todoText) {
-                this.collection.create({
-                    title: todoText
-                });
+                this.trigger('task:create', { title: todoText });
                 this.ui.input.val('');
             }
         }

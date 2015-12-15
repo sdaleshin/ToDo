@@ -10,6 +10,7 @@ App.module('TaskApp.List', function (List, App, Backbone, Marionette, $, _) {
         },
         showRegions: function (view) {
             this.headerView = this.getHeaderView();
+            this.listenTo(this.headerView, 'task:create', this.createTask);
             this.layoutView.headerRegion.show(this.headerView);
 
             this.footerView = this.getFooterView();
@@ -17,6 +18,10 @@ App.module('TaskApp.List', function (List, App, Backbone, Marionette, $, _) {
 
             this.taskListView = this.getTaskListView();
             this.layoutView.mainRegion.show(this.taskListView);
+        },
+
+        createTask: function(task){
+            this.tasks.create(task);
         },
 
         initializeBackboneRadio: function(){
