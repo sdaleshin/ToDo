@@ -38,7 +38,9 @@ App.module('Entities', function (Entities, App, Backbone, Marionette, $, _) {
         model: Entities.Task,
         localStorage: new Backbone.LocalStorage('todo-tasks'),
 
-        comparator: 'title',
+        comparator: function(model){
+            return -model.get('title');
+        },
 
         getCompleted: function () {
             return this.filter(this._isCompleted);
