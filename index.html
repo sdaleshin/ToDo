@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToDo</title>
+
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+<section id="todoapp">
+    <header id="header"><div>
+        <h1>todos</h1>
+        <input id="new-todo" placeholder="What needs to be done?" autofocus="">
+    </div></header>
+    <section id="main" style="display: block;"><div>
+        <input id="toggle-all" type="checkbox">
+        <label for="toggle-all">Mark all as complete</label>
+        <ul id="todo-list"></ul>
+    </div></section>
+    <footer id="footer" style="display: block;"><div>
+			<span id="todo-count">
+				<strong>5</strong> items left
+			</span>
+        <ul id="filters">
+            <li class="all">
+                <a href="#/" class="selected">All</a>
+            </li>
+            <li class="active">
+                <a href="#/active">Active</a>
+            </li>
+            <li class="completed">
+                <a href="#/completed">Completed</a>
+            </li>
+        </ul>
+        <button id="clear-completed" class="hidden">Clear completed</button>
+    </div></footer>
+</section>
+    <script type="text/javascript" src="js/vendor/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/vendor/underscore-min.js"></script>
+    <script type="text/javascript" src="js/vendor/backbone-min.js"></script>
+    <script type="text/javascript" src="js/vendor/backbone.localStorage-min.js"></script>
+    <script type="text/javascript" src="js/vendor/backbone.marionette.min.js"></script>
+    <script type="text/javascript" src="js/vendor/backbone.radio.js"></script>
+
+    <script type="text/javascript" src="js/backbone/app.js"></script>
+    <script type="text/javascript" src="js/backbone/entities/task.js"></script>
+    <script type="text/javascript" src="js/backbone/apps/task/task-app.js"></script>
+</body>
+</html>
