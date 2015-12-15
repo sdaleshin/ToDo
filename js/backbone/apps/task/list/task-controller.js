@@ -25,6 +25,9 @@ App.module('TaskApp.List', function (List, App, Backbone, Marionette, $, _) {
             filterChannel.reply('filterState', function () {
                 return filterState;
             });
+
+            var newFilter = this.options.filter && this.options.filter.trim() || 'all';
+            filterChannel.request('filterState').set('filter', newFilter);
         },
 
         getLayoutView: function () {

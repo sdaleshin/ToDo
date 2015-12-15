@@ -9,7 +9,7 @@
     <file path="/a.dummy" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450212725725" ignored="false" />
     <file path="/main.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450212921652" ignored="false" />
     <file path="/task-app.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450216804890" ignored="false" />
-    <file path="/task-controller.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450217343597" ignored="false" />
+    <file path="/task-controller.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450217581203" ignored="false" />
     <file path="/task-view.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450216459488" ignored="false" />
     <file path="/task.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450216934100" ignored="false" />
     <file path="/index.css" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450216579475" ignored="false" />
@@ -109,7 +109,7 @@
       <file leaf-file-name="task-controller.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/backbone/apps/task/list/task-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="44" selection-start="895" selection-end="895" vertical-scroll-proportion="0.595186">
+            <state line="28" column="64" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.48358864">
               <folding />
             </state>
           </provider>
@@ -602,7 +602,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/backbone/apps/task/list/task-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="44" selection-start="895" selection-end="895" vertical-scroll-proportion="0.595186">
+        <state line="28" column="64" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.48358864">
           <folding />
         </state>
       </provider>
