@@ -1,7 +1,20 @@
-/**
- * Created with JetBrains WebStorm.
- * User: DNS
- * Date: 15.12.15
- * Time: 23:07
- * To change this template use File | Settings | File Templates.
- */
+App.module('TaskApp', function (TaskApp, App, Backbone, Marionette, $, _) {
+
+    TaskApp.Router = Marionette.AppRouter.extend({
+        appRoutes: {
+            "*filter": "taskList"
+        }
+    });
+
+    var API = {
+        taskList: function (filter) {
+            return new TaskApp.List.Controller({filter: filter})
+        }
+
+    };
+
+    App.addInitializer(function () {
+        return new TaskApp.Router({ controller: API });
+    })
+
+});

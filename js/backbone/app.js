@@ -1,7 +1,11 @@
-/**
- * Created with JetBrains WebStorm.
- * User: DNS
- * Date: 15.12.15
- * Time: 23:04
- * To change this template use File | Settings | File Templates.
- */
+App = new Backbone.Marionette.Application();
+
+App.addRegions({
+    mainRegion: "#main-region"
+});
+
+App.on('start', function (options) {
+    if (Backbone.history) {
+        Backbone.history.start();
+    }
+});

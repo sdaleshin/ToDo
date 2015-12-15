@@ -8,23 +8,19 @@
     <link href="css/app.css" rel="stylesheet">
 </head>
 <body>
-<section id="todoapp">
-    <header id="header"><div>
-        <h1>todos</h1>
-        <input id="new-todo" placeholder="What needs to be done?" autofocus="">
-    </div></header>
-    <section id="main" style="display: block;"><div>
-        <input id="toggle-all" type="checkbox">
-        <label for="toggle-all">Mark all as complete</label>
-        <ul id="todo-list"></ul>
-    </div></section>
-    <footer id="footer" style="display: block;"><div>
+    <section id="todoapp">
+        <header id="header"></header>
+        <section id="main" style="display: block;"></section>
+        <footer id="footer" style="display: block;"></footer>
+    </section>
+
+    <script type="text/html" id="template-footer">
 			<span id="todo-count">
-				<strong>5</strong> items left
+				<strong><%= activeCount %></strong> <%= activeCountLabel() %>
 			</span>
         <ul id="filters">
             <li class="all">
-                <a href="#/" class="selected">All</a>
+                <a href="#/">All</a>
             </li>
             <li class="active">
                 <a href="#/active">Active</a>
@@ -33,9 +29,26 @@
                 <a href="#/completed">Completed</a>
             </li>
         </ul>
-        <button id="clear-completed" class="hidden">Clear completed</button>
-    </div></footer>
-</section>
+        <button id="clear-completed" <% if (!completedCount) { %>class="hidden"<% } %>>Clear completed</button>
+    </script>
+    <script type="text/html" id="template-header">
+        <h1>todos</h1>
+        <input id="new-todo" placeholder="What needs to be done?" autofocus>
+    </script>
+    <script type="text/html" id="template-task-item">
+        <div class="view">
+            <input class="toggle" type="checkbox" <% if (completed) { %>checked<% } %>>
+            <label><%- title %></label>
+            <button class="destroy"></button>
+        </div>
+        <input class="edit" value="<%- title %>">
+    </script>
+    <script type="text/html" id="template-task-list">
+        <input id="toggle-all" type="checkbox">
+        <label for="toggle-all">Mark all as complete</label>
+        <ul id="todo-list"></ul>
+    </script>
+
     <script type="text/javascript" src="js/vendor/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/vendor/underscore-min.js"></script>
     <script type="text/javascript" src="js/vendor/backbone-min.js"></script>
@@ -46,5 +59,9 @@
     <script type="text/javascript" src="js/backbone/app.js"></script>
     <script type="text/javascript" src="js/backbone/entities/task.js"></script>
     <script type="text/javascript" src="js/backbone/apps/task/task-app.js"></script>
+    <script type="text/javascript" src="js/backbone/apps/task/list/task-controller.js"></script>
+    <script type="text/javascript" src="js/backbone/apps/task/list/task-view.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
