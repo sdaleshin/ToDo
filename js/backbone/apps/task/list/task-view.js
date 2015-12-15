@@ -54,8 +54,8 @@ App.module('TaskApp.List', function (List, App, Backbone, Marionette, $, _) {
             clear: '#clear-completed'
         },
 
-        events: {
-            'click @ui.clear': 'onClearClick'
+        triggers: {
+            'click @ui.clear': 'task:completed:remove'
         },
 
         collectionEvents: {
@@ -92,13 +92,6 @@ App.module('TaskApp.List', function (List, App, Backbone, Marionette, $, _) {
             this.ui.filters.removeClass('selected');
             this.ui[filterChannel.request('filterState').get('filter')]
                 .addClass('selected');
-        },
-
-        onClearClick: function () {
-            var completed = this.collection.getCompleted();
-            completed.forEach(function (todo) {
-                todo.destroy();
-            });
         }
     });
 
@@ -119,23 +112,18 @@ App.module('TaskApp.List', function (List, App, Backbone, Marionette, $, _) {
         },
 
         events: {
-            'click @ui.destroy': 'deleteModel',
             'dblclick @ui.label': 'onEditClick',
             'keydown @ui.edit': 'onEditKeypress',
-            'focusout @ui.edit': 'onEditFocusout',
-            'click @ui.toggle': 'toggle'
+            'focusout @ui.edit': 'onEditFocusout'
+        },
+
+        triggers: {
+            'click @ui.destroy': 'task:remove',
+            'click @ui.toggle': 'task:toggle'
         },
 
         modelEvents: {
             change: 'render'
-        },
-
-        deleteModel: function () {
-            this.model.destroy();
-        },
-
-        toggle: function () {
-            this.model.toggle().save();
         },
 
         onEditClick: function () {
@@ -146,12 +134,8 @@ App.module('TaskApp.List', function (List, App, Backbone, Marionette, $, _) {
 
         onEditFocusout: function () {
             var todoText = this.ui.edit.val().trim();
-            if (todoText) {
-                this.model.set('title', todoText).save();
-                this.$el.removeClass('editing');
-            } else {
-                this.destroy();
-            }
+            this.$el.removeClass('editing');
+            this.trigger('task:update', {title: todoText} );
         },
 
         onEditKeypress: function (e) {
@@ -210,10 +194,7 @@ App.module('TaskApp.List', function (List, App, Backbone, Marionette, $, _) {
 
         onToggleAllClick: function (e) {
             var isChecked = e.currentTarget.checked;
-
-            this.collection.each(function (todo) {
-                todo.save({ completed: isChecked });
-            });
+            this.trigger('task:toggle:all', { isChecked: isChecked });
         }
     });
 

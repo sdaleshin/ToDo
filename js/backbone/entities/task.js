@@ -54,8 +54,8 @@ App.module('Entities', function (Entities, App, Backbone, Marionette, $, _) {
             return this.reject(this._isCompleted);
         },
 
-        _isCompleted: function (todo) {
-            return todo.isCompleted();
+        _isCompleted: function (task) {
+            return task.isCompleted();
         }
     });
 

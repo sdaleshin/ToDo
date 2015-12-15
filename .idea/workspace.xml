@@ -9,9 +9,9 @@
     <file path="/a.dummy" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450212725725" ignored="false" />
     <file path="/main.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450212921652" ignored="false" />
     <file path="/task-app.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450216804890" ignored="false" />
-    <file path="/task-controller.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450218475771" ignored="false" />
-    <file path="/task-view.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450218318643" ignored="false" />
-    <file path="/task.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450218646758" ignored="false" />
+    <file path="/task-controller.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450220433801" ignored="false" />
+    <file path="/task-view.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450220255853" ignored="false" />
+    <file path="/task.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450218912301" ignored="false" />
     <file path="/index.css" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450216579475" ignored="false" />
     <file path="/filter-state.js" changelist="826aa9ec-ea6f-4533-ab4f-555bb3013cfe" time="1450217132666" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -109,25 +109,25 @@
       <file leaf-file-name="task-controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/backbone/apps/task/list/task-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="52" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0">
+            <state line="39" column="22" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="task.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/backbone/entities/task.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="27" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.63238513">
+            <state line="38" column="49" selection-start="983" selection-end="983" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task-view.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="task-view.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/backbone/apps/task/list/task-view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="65" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.0">
+            <state line="116" column="49" selection-start="3187" selection-end="3187" vertical-scroll-proportion="0.81400436">
               <folding />
             </state>
           </provider>
@@ -156,9 +156,9 @@
         <option value="$PROJECT_DIR$/js/backbone/apps/task/task-app.js" />
         <option value="$PROJECT_DIR$/js/backbone/entities/filter-state.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/backbone/apps/task/list/task-view.js" />
-        <option value="$PROJECT_DIR$/js/backbone/apps/task/list/task-controller.js" />
         <option value="$PROJECT_DIR$/js/backbone/entities/task.js" />
+        <option value="$PROJECT_DIR$/js/backbone/apps/task/list/task-controller.js" />
+        <option value="$PROJECT_DIR$/js/backbone/apps/task/list/task-view.js" />
       </list>
     </option>
   </component>
@@ -562,20 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/backbone/apps/task/list/task-view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="65" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/backbone/apps/task/list/task-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="52" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="51" selection-start="1798" selection-end="1798" vertical-scroll-proportion="-3.6538463">
@@ -602,7 +588,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/backbone/entities/task.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="27" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.63238513">
+        <state line="38" column="49" selection-start="983" selection-end="983" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/backbone/apps/task/list/task-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="22" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/backbone/apps/task/list/task-view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="49" selection-start="3187" selection-end="3187" vertical-scroll-proportion="0.81400436">
           <folding />
         </state>
       </provider>
