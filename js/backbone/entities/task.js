@@ -1,7 +1,25 @@
-/**
- * Created with JetBrains WebStorm.
- * User: DNS
- * Date: 15.12.15
- * Time: 23:09
- * To change this template use File | Settings | File Templates.
- */
+App.module('Entities', function (Entities, App, Backbone, Marionette, $, _) {
+
+    Entities.Task = Backbone.Model.extend({
+        urlRoot: "/api/users"
+    });
+
+    Entities.TaskCollection = Backbone.Collection.extend({
+        model: Entities.Task,
+        localStorage: new Backbone.LocalStorage('todo-tasks')
+    });
+
+    var API = {
+        getTaskEntities: function () {
+            var tasks = new Entities.TaskCollection();
+            tasks.fetch();
+            return tasks;
+        }
+    }
+
+    App.reqres.setHandler("task:entities", function () {
+        return API.getTaskEntities();
+
+    });
+
+});

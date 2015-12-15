@@ -1,7 +1,7 @@
 App = new Backbone.Marionette.Application();
 
 App.addRegions({
-    mainRegion: "#main-region"
+    mainRegion: "#todoapp"
 });
 
 App.on('start', function (options) {
